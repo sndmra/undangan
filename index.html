@@ -100,37 +100,33 @@
     <div id="splash-screen"
         class="fixed inset-0 z-[100] flex h-full w-full flex-col bg-background-light dark:bg-background-dark transition-transform duration-700 ease-in-out">
         <div class="relative flex h-full w-full flex-col group/design-root overflow-hidden">
-            <div class="absolute inset-0 z-0 bg-repeat opacity-5"
-                data-alt="Subtle Betawi-inspired gigi balang geometric pattern in a repeating grid"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuKEgnlWiYp0IQYtKF-X8iHY29Z0rzdj0mvfbyt_RBL4gArBpy1CPKCwtALQluFmMQN5VFRtk_YnKHSUagf4eua7oL1nYsqC8Z8qUxqopuzD4HHqpwBQeJ2fg0l9fkYvnh3UOux2AzowdpQqwL2IwzBQkNd5-pwTaIC-JANtE8DuqmFRxw7AalSqmywjVRFZ9RpDf1Q5JX4gQqCH1k5P9dBvXtisdiK1WmYeUqQx7GIKePIVynVlQbnGTKFnLpnjP3CxE0KnOKtA'); background-size: 200px 200px;">
+            <div class="absolute top-0 left-0 h-40 w-40 text-kuning-keemasan/20 dark:text-kuning-keemasan/10">
+                <svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 0C50 27.6142 27.6142 50 0 50V0H50Z" fill="currentColor"></path>
+                    <path d="M100 0C100 27.6142 77.6142 50 50 50C77.6142 50 100 72.3858 100 100V0Z" fill="currentColor">
+                    </path>
+                </svg>
             </div>
+            <div
+                class="absolute bottom-0 right-0 h-40 w-40 rotate-180 text-kuning-keemasan/20 dark:text-kuning-keemasan/10">
+                <svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 0C50 27.6142 27.6142 50 0 50V0H50Z" fill="currentColor"></path>
+                    <path d="M100 0C100 27.6142 77.6142 50 50 50C77.6142 50 100 72.3858 100 100V0Z" fill="currentColor">
+                    </path>
+                </svg>
+            </div>
+            <!-- Pattern removed for clean look -->
             <div class="layout-container flex h-full grow flex-col">
                 <main class="flex min-h-screen flex-1 flex-col items-center justify-center p-4 sm:p-6 md:p-8">
                     <div class="relative z-10 flex w-full max-w-xl flex-col items-center justify-center text-center"
                         data-aos="zoom-in" data-aos-duration="1000">
-                        <div
-                            class="absolute -top-8 -left-8 h-24 w-24 text-kuning-keemasan/20 dark:text-kuning-keemasan/10">
-                            <svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 0C50 27.6142 27.6142 50 0 50V0H50Z" fill="currentColor"></path>
-                                <path d="M100 0C100 27.6142 77.6142 50 50 50C77.6142 50 100 72.3858 100 100V0Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                        <div
-                            class="absolute -bottom-8 -right-8 h-24 w-24 rotate-180 text-kuning-keemasan/20 dark:text-kuning-keemasan/10">
-                            <svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 0C50 27.6142 27.6142 50 0 50V0H50Z" fill="currentColor"></path>
-                                <path d="M100 0C100 27.6142 77.6142 50 50 50C77.6142 50 100 72.3858 100 100V0Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
+
                         <div class="flex flex-col items-center gap-6 p-6">
                             <p
                                 class="font-display text-sm font-normal uppercase tracking-widest text-text-light dark:text-text-dark">
                                 The Wedding of</p>
                             <div class="flex flex-col gap-2 text-center">
-                                <h1
-                                    class="font-serif text-5xl font-bold leading-tight text-kuning-keemasan md:text-7xl">
+                                <h1 class="font-serif text-5xl font-bold leading-tight text-primary md:text-7xl">
                                     Tsaniyah & Daman
                                 </h1>
                             </div>
@@ -138,7 +134,7 @@
                                 31 Januari 2026</p>
                             <div class="mt-4">
                                 <button onclick="openInvitation()"
-                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-merah-bata text-white text-base font-bold leading-normal tracking-wide shadow-lg transition-transform hover:scale-105 animate-bounce">
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-8 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg transition-transform hover:scale-105">
                                     <span class="truncate">Buka Undangan</span>
                                 </button>
                             </div>
@@ -192,17 +188,17 @@
             <!-- Glass Card -->
             <div class="relative z-10 mx-4 max-w-2xl w-full p-8 md:p-12 text-center text-white border border-white/20 bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl"
                 data-aos="fade-up" data-aos-duration="1000">
-                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-md"
-                    data-aos="fade-down" data-aos-delay="200">T & D</h2>
                 <p class="font-display tracking-[0.3em] uppercase text-sm md:text-base mb-4 text-white/90"
                     data-aos="fade-in" data-aos-delay="400">We Are Getting Married</p>
                 <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg" data-aos="zoom-in"
                     data-aos-delay="600">
-                    Save the Date
+                    Tsaniyah & Daman
                 </h1>
                 <p class="text-lg md:text-xl font-light leading-relaxed mb-8 text-white/90" data-aos="fade-up"
                     data-aos-delay="800">
-                    Join us as we celebrate our love and begin our new journey together.
+                    Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan Putra-Putri kami yang akan
+                    diadakan pada
+                    tanggal
                 </p>
                 <div class="inline-block border-y border-white/40 py-3 px-8" data-aos="flip-up" data-aos-delay="1000">
                     <p class="font-display text-2xl md:text-3xl font-semibold tracking-widest">31 . 01 . 2026</p>
@@ -229,7 +225,7 @@
                                 Tsaniyah Mardiah</p>
                             <p
                                 class="text-subtle-light dark:text-subtle-dark text-base font-normal italic leading-normal mt-3">
-                                Putri dari Bapak Ruhita dan Ibu Sarnah</p>
+                                Putri dari <strong>Bapak Ruhita</strong> dan <strong>Ibu Sarnah</strong></p>
                             <p class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-normal mt-4">
                             </p>
                         </div>
@@ -247,7 +243,7 @@
                                 Daman Huri</p>
                             <p
                                 class="text-subtle-light dark:text-subtle-dark text-base font-normal italic leading-normal mt-3">
-                                Putra dari Bapak Abdul Kadir dan Ibu Komariah</p>
+                                Putra dari <strong>Bapak Abdul Kadir</strong> dan <strong>Ibu Komariah</strong></p>
                             <p class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-normal mt-4">
                             </p>
                         </div>
@@ -496,8 +492,8 @@
                         </div>
                     </div>
                     <p
-                        class="text-betawi-blue dark:text-betawi-cream text-base font-normal leading-normal pb-3 pt-12 px-4 text-center">
-                        Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+                        class="text-betawi-blue dark:text-betawi-cream text-2xl font-normal leading-normal pb-3 pt-12 px-4 text-center font-serif">
+                        وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</p>
                 </div>
             </div>
         </footer>
