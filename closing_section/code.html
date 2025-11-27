@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thank You - Wedding Invitation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;family=Lora:wght@700&amp;family=Dancing+Script:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-lora { font-family: 'Lora', serif; }
+        .font-dancing-script { font-family: 'Dancing Script', cursive; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f2b10d", /* Kuning Keemasan - Golden Yellow */
+              "background-light": "#fdfbf5",
+              "background-dark": "#221d10",
+              "betawi-red": "#b94129", /* Merah Bata */
+              "betawi-green": "#4a7c59", /* Hijau Daun */
+              "betawi-blue": "#1e3a5f", /* Biru Gelap */
+              "betawi-cream": "#FDFBF5"
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"],
+              "serif": ["Lora", "serif"],
+              "script": ["Dancing Script", "cursive"],
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-10 sm:py-16">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center">
+<!-- HeadlineText -->
+<h1 class="text-betawi-red dark:text-primary font-lora text-4xl sm:text-5xl font-bold leading-tight px-4 text-center pb-3 pt-6">Terima Kasih</h1>
+<!-- BodyText -->
+<p class="text-betawi-blue dark:text-betawi-cream text-base font-normal leading-relaxed pb-8 pt-2 px-4 text-center max-w-xl">
+                        Your presence and prayers on our special day mean the world to us. We are so grateful for your well-wishes as we begin our new journey together.
+                    </p>
+<!-- Ornamental Divider -->
+<div class="px-4 py-6 w-full flex justify-center">
+<svg class="w-32 h-auto text-betawi-red dark:text-primary" fill="none" viewbox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 10 C 40 20, 20 20, 10 10 C 0 0, 10 0, 20 5 S 40 15, 50 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M50 10 C 60 20, 80 20, 90 10 C 100 0, 90 0, 80 5 S 60 15, 50 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<circle cx="50" cy="10" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<!-- Signature Block -->
+<div class="w-full max-w-lg p-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4">
+<!-- Bride's Signature -->
+<div class="flex flex-col items-center gap-2">
+<p class="font-dancing-script text-betawi-green dark:text-green-300 text-5xl">Aisha Putri</p>
+<p class="text-betawi-blue dark:text-betawi-cream text-sm font-semibold tracking-wider">THE BRIDE</p>
+</div>
+<!-- Groom's Signature -->
+<div class="flex flex-col items-center gap-2">
+<p class="font-dancing-script text-betawi-green dark:text-green-300 text-5xl">Budi Santoso</p>
+<p class="text-betawi-blue dark:text-betawi-cream text-sm font-semibold tracking-wider">THE GROOM</p>
+</div>
+</div>
+</div>
+<!-- Final BodyText -->
+<p class="text-betawi-blue dark:text-betawi-cream text-base font-normal leading-normal pb-3 pt-12 px-4 text-center">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>
